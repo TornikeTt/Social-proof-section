@@ -1,0 +1,251 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;    
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Spartan', sans-serif;
+    width: 100%;
+    height: 90vh;
+    overflow:hidden;
+    margin: 80px auto;
+}
+
+.up{
+    width: 78%;
+    margin: 60px auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headet-text{
+    width:400px;
+    margin-bottom:10px;
+    color: hsl(300, 58%, 22%);
+    font-size: 45px;
+}
+.paragraph{
+    width:500px;
+    line-height: 22px;
+    color: grey;
+    font-size: 15px;
+}
+
+.stars{
+    width: 400px;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+
+.first-star , 
+.second-star , 
+.third-star{
+    background-color: rgb(240, 235, 235);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    opacity:0.8;
+    width: 450px;
+    height: 55px;
+}
+.first-star{
+    margin-left: -150px;
+}
+.second-star{
+    margin-left: -100px;
+}
+.third-star{
+    margin-left: -50px;
+}
+.s{
+    animation-name: starMove;
+    animation-duration: 2s;
+}
+
+@keyframes starMove{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.boxs-wrapper{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.first-box{
+    width:32%;
+    height: 65%;
+    background-color:hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin-bottom: 120px;
+    perspective: 100rem;
+}
+.second-box{
+    width:32%;
+    height: 65%;
+    background-color:hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin-bottom: 60px;
+    perspective: 100rem;
+}
+
+.third-box{
+    width:32%;
+    height: 65%;
+    background-color:hsl(300, 43%, 22%);
+    border-radius: 10px;
+    perspective: 100rem;
+}
+
+
+.box-items{
+    width:90%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.user{
+    width: 60%;
+    height: 30%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.user-image img{
+    border-radius: 50%;
+    width: 40px;
+    transition-property: transform;
+    transition-duration: 1.2s;
+
+}
+.user-image img:hover{
+    transform: scale(2);
+}
+.ueser-Information{
+    line-height: 22px;
+}
+.ueser-Information h4{
+    color: white;
+}
+.ueser-Information p{
+    color:hsl(333, 80%, 67%);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.user-text{
+    width: 80%;
+    height: 55%;
+    margin-left: 20px;
+    line-height: 20px;
+}
+.user-text p{
+    font-size: 12px;
+    color: white;
+}
+
+.pattern{
+    position:absolute;
+    margin-top : -80px;
+}
+.top-image{
+    width: 500px;
+    height:340px;
+}
+
+@media (max-width: 375px){
+    body{
+        width: 375px;
+        overflow:auto;
+    }
+
+    .up{
+        width: 375px;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .headet-text{
+        width: 340px;
+        font-size: 37px;
+        text-align: center;
+    }
+
+    .paragraph{
+        font-size: 15px;
+        width: 340px;
+        text-align: center;
+    }
+
+    .stars{
+        margin-top: 20px;
+        width: 350px;
+        height: 300px;
+        justify-content: space-evenly;
+    }
+    .first-star , 
+    .second-star , 
+    .third-star{
+        margin:0;
+        width: 350px;
+        flex-direction:column;
+        justify-content: space-around;
+        height: 70px;
+    }
+
+
+    .boxs-wrapper{
+        width: 375px;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    .first-box{
+        width: 350px;
+        height: 200px;
+        margin-bottom:20px;
+        border-radius: 5px;
+    }
+    .second-box{
+        width: 350px;
+        height: 200px;
+        margin-bottom:20px;
+        border-radius: 5px;
+    }
+    .third-box{
+        width: 350px;
+        height: 200px;
+        margin-bottom:100px;
+        border-radius: 5px;
+    }
+    .top-image{
+        margin-top: -100px;
+        width: 350px;
+    }
+}
